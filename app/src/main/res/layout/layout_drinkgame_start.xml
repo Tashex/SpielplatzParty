@@ -1,6 +1,155 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-</LinearLayout>
+    <TextView
+        android:id="@+id/layout_drinkgame_start_text_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:textColor="@color/colorText"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:text="Trinkspiel" />
+
+    <TextView
+        android:id="@+id/layout_drinkgame_start_text_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="93dp"
+        android:gravity="center"
+        android:textColor="@color/colorText"
+        android:textSize="20dp"
+        android:textStyle="normal"
+        android:text="Spieler {id} hinzufügen" />
+
+    <TextView
+        android:id="@+id/layout_drinkgame_start_text_name"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="190dp"
+        android:gravity="right|center_vertical"
+        android:textColor="@color/colorText"
+        android:textSize="15dp"
+        android:textStyle="normal"
+        android:text="Name" />
+
+    <TextView
+        android:id="@+id/layout_drinkgame_start_text_gender"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="240dp"
+        android:gravity="right|center_vertical"
+        android:textColor="@color/colorText"
+        android:textSize="15dp"
+        android:textStyle="normal"
+        android:text="Geschlecht" />
+
+    <TextView
+        android:id="@+id/layout_drinkgame_start_text_driver"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="290dp"
+        android:gravity="right|center_vertical"
+        android:textColor="@color/colorText"
+        android:textSize="15dp"
+        android:textStyle="normal"
+        android:text="Führerschein" />
+
+    <TextView
+        android:id="@+id/layout_drinkgame_start_text_single"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="340dp"
+        android:gravity="right|center_vertical"
+        android:textColor="@color/colorText"
+        android:textSize="15dp"
+        android:textStyle="normal"
+        android:text="Vergeben" />
+
+    <EditText
+        android:id="@+id/layout_drinkgame_start_input_text_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/layout_drinkgame_start_text_name"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="15dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name" />
+
+    <CheckBox
+        android:id="@+id/layout_drinkgame_start_input_box_gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/layout_drinkgame_start_text_gender"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="-5dp"
+        android:layout_marginEnd="100dp"
+        android:text="" />
+
+    <CheckBox
+        android:id="@+id/layout_drinkgame_start_input_box_driver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/layout_drinkgame_start_text_driver"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="-5dp"
+        android:layout_marginEnd="100dp"
+        android:text="" />
+
+    <CheckBox
+        android:id="@+id/layout_drinkgame_start_input_box_single"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/layout_drinkgame_start_text_single"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="-5dp"
+        android:layout_marginEnd="100dp"
+        android:text="" />
+
+    <Button
+        android:id="@+id/button"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:background="@drawable/border_button"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="126dp"
+        android:textColor="@color/colorText"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:text="Weitere hinzufügen" />
+
+    <Button
+        android:id="@+id/button2"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:background="@drawable/border_button"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="58dp"
+        android:textColor="@color/colorText"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:text="Spielen!" />
+
+</RelativeLayout>
